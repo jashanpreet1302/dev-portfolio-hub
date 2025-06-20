@@ -20,9 +20,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-slate-300 max-w-3xl mx-auto"
-          >
-            A passionate developer with a keen eye for detail and a love for creating innovative solutions
-          </motion.p>
+          >I love to  learn whenever and wherever I find a chance to and  the world of technology combined with innovation paves an entire new path for me to explore which makes me more eager to learn and build computational solutions that benefit everyone.</motion.p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
