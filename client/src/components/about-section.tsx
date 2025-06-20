@@ -1,19 +1,7 @@
 import { motion } from "framer-motion";
+import { PERSONAL_INFO, SKILLS, CERTIFICATIONS, HOBBIES } from "@/lib/constants";
 
 export default function AboutSection() {
-  const personalInfo = {
-    name: "Jashanpreet Singh",
-    email: "jashanpreet@example.com",
-    phone: "+91 XXXXX XXXXX",
-    languages: "English, Hindi, Punjabi"
-  };
-
-  const skills = [
-    { category: "Frontend", technologies: "React, Vue.js, TypeScript" },
-    { category: "Backend", technologies: "Node.js, Python, Java" },
-    { category: "Database", technologies: "MongoDB, PostgreSQL" },
-    { category: "DevOps", technologies: "Docker, AWS, Git" },
-  ];
 
   return (
     <section id="about" className="py-20 bg-slate-800/50">
@@ -48,31 +36,55 @@ export default function AboutSection() {
               <h3 className="text-2xl font-bold text-violet-400 mb-4">Personal Information</h3>
               <div className="space-y-4 text-slate-300">
                 <div className="flex justify-between">
-                  <span className="font-medium">Name:</span>
-                  <span>{personalInfo.name}</span>
+                  <span className="font-medium">Full Name:</span>
+                  <span>{PERSONAL_INFO.fullName}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-medium">Age:</span>
+                  <span>{PERSONAL_INFO.age} Years</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-medium">Nationality:</span>
+                  <span>{PERSONAL_INFO.nationality}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium">Email:</span>
-                  <span>{personalInfo.email}</span>
+                  <span>{PERSONAL_INFO.email}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium">Phone:</span>
-                  <span>{personalInfo.phone}</span>
+                  <span>{PERSONAL_INFO.phone}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium">Languages:</span>
-                  <span>{personalInfo.languages}</span>
+                  <span>{PERSONAL_INFO.languages}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-medium">Address:</span>
+                  <span className="text-right">{PERSONAL_INFO.address}</span>
                 </div>
               </div>
             </div>
             
             <div className="glass-card p-8">
-              <h3 className="text-2xl font-bold text-violet-400 mb-4">Skills & Expertise</h3>
-              <div className="grid grid-cols-2 gap-4">
-                {skills.map((skill, index) => (
-                  <div key={index} className="skill-item">
-                    <span className="block text-sm text-slate-400">{skill.category}</span>
-                    <span className="font-medium">{skill.technologies}</span>
+              <h3 className="text-2xl font-bold text-violet-400 mb-4">Certifications</h3>
+              <div className="space-y-4">
+                {CERTIFICATIONS.map((cert, index) => (
+                  <div key={index} className="border-l-4 border-violet-500 pl-4">
+                    <h4 className="font-semibold text-white">{cert.title}</h4>
+                    <p className="text-slate-400 text-sm">{cert.provider}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="glass-card p-8">
+              <h3 className="text-2xl font-bold text-violet-400 mb-4">Hobbies & Interests</h3>
+              <div className="space-y-3">
+                {HOBBIES.map((hobby, index) => (
+                  <div key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-slate-300 text-sm">{hobby}</p>
                   </div>
                 ))}
               </div>

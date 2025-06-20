@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
+import { PERSONAL_INFO } from "@/lib/constants";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="text-xl font-bold gradient-text">
-            Jashanpreet Singh
+            {PERSONAL_INFO.fullName}
           </div>
           
           {/* Desktop Navigation */}

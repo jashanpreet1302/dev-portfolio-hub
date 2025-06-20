@@ -1,54 +1,165 @@
 export const GITHUB_URL = "https://github.com/jashanpreet1302";
 
 export const PERSONAL_INFO = {
-  name: "Jashanpreet Singh",
-  location: "Punjab, India",
-  experience: "3+ Years",
-  specialization: "React, Node.js, Python",
+  firstName: "Jashanpreet",
+  middleName: "Singh",
+  lastName: "Sawhney",
+  fullName: "Jashanpreet Singh Sawhney",
+  age: 22,
+  nationality: "Indian",
+  location: "Jagadhri, Haryana, India",
+  address: "1730, near Police Chownky, Rajaan Gali, Jagadhri, Haryana, 135001",
+  specialization: "C++ Developer Enthusiast",
+  passion: "Passionate about ML/AI",
   availability: "Open to opportunities",
-  email: "jashanpreet@example.com",
-  phone: "+91 XXXXX XXXXX",
-  languages: "English, Hindi, Punjabi"
+  email: "jashannoor13@gmail.com",
+  phone: "+919996249013",
+  languages: "Punjabi, Hindi, English"
 };
 
 export const SKILLS = [
-  { category: "Frontend", technologies: "React, Vue.js, TypeScript" },
-  { category: "Backend", technologies: "Node.js, Python, Java" },
-  { category: "Database", technologies: "MongoDB, PostgreSQL" },
-  { category: "DevOps", technologies: "Docker, AWS, Git" },
+  {
+    name: "C++",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    category: "Programming Language"
+  },
+  {
+    name: "C",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+    category: "Programming Language"
+  },
+  {
+    name: "HTML",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    category: "Frontend"
+  },
+  {
+    name: "CSS",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    category: "Frontend"
+  },
+  {
+    name: "JavaScript",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    category: "Programming Language"
+  },
+  {
+    name: "React",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    category: "Frontend"
+  },
+  {
+    name: "Tailwind CSS",
+    logo: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+    category: "Frontend"
+  },
+  {
+    name: "MongoDB",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    category: "Database"
+  },
+  {
+    name: "Express.js",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    category: "Backend"
+  },
+  {
+    name: "Python",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    category: "Programming Language"
+  }
+];
+
+export const EDUCATION = [
+  {
+    degree: "B.Tech. Computer Science and Engineering",
+    institution: "Guru Nanak Dev University (GNDU), Amritsar, Punjab",
+    duration: "07/2022 – Present",
+    grade: "SGPA (5th Sem): 8.33",
+    type: "current"
+  },
+  {
+    degree: "Higher Secondary Education (Class XII)",
+    institution: "S.D. Public School, Jagadhri, Haryana",
+    duration: "04/2021 – 05/2022",
+    grade: "94.2% (96.4% in PCM)",
+    type: "completed"
+  },
+  {
+    degree: "Secondary Education (Class X)",
+    institution: "S.D. Public School, Jagadhri, Haryana",
+    duration: "04/2020 – 05/2021",
+    grade: "91.3%",
+    achievement: "Certificate of Merit in Maths for scoring 100/100 marks from CBSE",
+    type: "completed"
+  }
+];
+
+export const CERTIFICATIONS = [
+  {
+    title: "C Programming for Beginners – Master the C Language",
+    provider: "Tim Buchalka's Learning Training Academy, Jason Fedin"
+  },
+  {
+    title: "A.I. WorkPlace Proficiency Certification",
+    provider: "Superhuman AI Academy (Zain Kahn)"
+  }
+];
+
+export const HOBBIES = [
+  "Music: Listening and Singing",
+  "Literature: Learning about Spirituality and Human Nature",
+  "Cinematic and Comic Book Critique: Passionate about fiction movies and tracing their comic origins",
+  "Exploring the origins of truth in science and education"
 ];
 
 export const PROJECTS = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "Full-stack e-commerce solution with React, Node.js and MongoDB",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["React", "Node.js", "MongoDB"],
+    title: "Weather Forecast App",
+    description: "Real-time weather forecasting tool that fetches and displays weather data using an API. Integrated cURL for API requests and parsed JSON data to provide weather updates in CLI.",
+    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    technologies: ["C++", "cURL", "JSON"],
     colors: ["violet", "cyan", "emerald"]
   },
   {
     id: 2,
-    title: "Analytics Dashboard",
-    description: "Real-time data visualization dashboard with D3.js and Python backend",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["D3.js", "Python", "Flask"],
+    title: "Password Manager",
+    description: "Secure password manager with encryption for storing and managing credentials. Used MongoDB for database and Express.js for backend API development.",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    technologies: ["React", "Tailwind CSS", "MongoDB", "Express.js"],
     colors: ["violet", "cyan", "emerald"]
   },
   {
     id: 3,
-    title: "Mobile App",
-    description: "Cross-platform mobile application built with React Native",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["React Native", "Firebase", "TypeScript"],
+    title: "Web Music Player",
+    description: "Responsive music streaming web app that shows Spotify's UI and functionality. Implemented audio playback, playlist management, and interactivity.",
+    image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    technologies: ["HTML", "CSS", "JavaScript"],
     colors: ["violet", "cyan", "emerald"]
   },
   {
     id: 4,
-    title: "AI Chat Assistant",
-    description: "Intelligent chatbot using OpenAI API and natural language processing",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["Python", "OpenAI", "FastAPI"],
+    title: "Developer's Journal",
+    description: "Productivity-oriented web app to store code snippets, analyze project performance using visual charts, and assist in debugging with intelligent insights.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    technologies: ["React", "TypeScript", "MongoDB", "Chart.js"],
+    colors: ["violet", "cyan", "emerald"]
+  },
+  {
+    id: 5,
+    title: "Netflix Clone",
+    description: "Fully responsive clone of the Netflix web app, pixel-perfect on both desktop and mobile, matching the layout, grid, and UI behavior of the original platform.",
+    image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    colors: ["violet", "cyan", "emerald"]
+  },
+  {
+    id: 6,
+    title: "Student Performance Predictor",
+    description: "Academic analytics web app that stores student performance data and generates intelligent reports including personalized focus areas with custom report generation.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
     colors: ["violet", "cyan", "emerald"]
   }
 ];

@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
+import { PERSONAL_INFO } from "@/lib/constants";
 
 const contactFormSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
@@ -34,21 +35,21 @@ export default function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "jashanpreet@example.com",
+      value: PERSONAL_INFO.email,
       bgColor: "bg-violet-600/20",
       iconColor: "text-violet-400"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 XXXXX XXXXX",
+      value: PERSONAL_INFO.phone,
       bgColor: "bg-cyan-600/20",
       iconColor: "text-cyan-400"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Punjab, India",
+      value: PERSONAL_INFO.location,
       bgColor: "bg-emerald-600/20",
       iconColor: "text-emerald-400"
     }

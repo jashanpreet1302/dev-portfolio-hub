@@ -1,0 +1,45 @@
+Jashanpreet Singh
+📧 jashannoor13@gmail.com 📱 (+91) 9996249013
+🛠️ Skills
+C/ C++, HTML, CSS, JavaScript, React, Tailwind CSS, Data Structures and Algorithms, MongoDB, Express.js , Python 
+
+🎓 Education
+B.Tech. Computer Science and Engineering – Guru Nanak Dev University (GNDU), Amritsar, PunjabDuration: 07/2022 – Present | SGPA (5th Sem): 8.33 | 
+
+Higher Secondary Education (Class XII) – S.D. Public School, Jagadhri, Haryana
+Duration: 04/2021 – 05/2022 | Score: 94.2% (96.4% in PCM)
+
+Secondary Education (Class X) – S.D. Public School, Jagadhri, Haryana
+Duration: 04/2020 – 05/2021 | Score: 91.3% | Received Certificate of Merit in Maths for scoring 100/100 marks from CBSE
+
+📜 Certifications
+C Programming for Beginners – Master the C Language
+Tim Buchalka’s Learning Training Academy, Jason Fedin
+A.I. WorkPlace Proficiency Certification by Superhuman AI Academy ( Zain Kahn)
+
+💼 Projects
+Weather Forecast App – Technologies used: C++, cURL, JSON Parsing. Created a real-time weather forecasting tool that fetches and displays weather data using an API. Integrated cURL for API requests and parsed JSON data to provide weather updates in CLI. Learned: API integration, handling JSON data in C++, and network programming.
+Password Manager – Technologies used: React, Tailwind CSS, MongoDB, Express.js. Built a secure password manager with encryption for storing and managing credentials. Used MongoDB for database and Express.js for backend API development. Learned: Full-stack development, authentication mechanisms.
+Web Music Player – Technologies used: HTML, CSS, and JavaScript. Developed a responsive music streaming web app that shows Spotify’s UI and functionality. Implemented audio playback, playlist management, and interactivity. Learned: Media handling in JavaScript and responsive design.
+Developer’s Journal – Technologies used: React, Tailwind CSS, MongoDB, Express.js, TypeScript, JavaScript, Chart.js, and npm. Built a productivity-oriented developer’s web application to store code snippets, analyze project performance using visual charts, and assist in debugging with intelligent insights and many more tools to enhance development efficiency.
+Netflix Clone – Technologies used: HTML, CSS, and JavaScript. Built a fully responsive clone of the Netflix web app, pixel-perfect on both desktop and mobile, matching the layout, grid, and UI behavior of the original platform.
+Student Performance Predictor Web App – Technologies used: Full-stack stack (React, Node.js, Express, MongoDB). Built an academic analytics web app that stores student performance data and generates intelligent reports including personalized focus areas. Includes a custom report generation feature for educators and institutions.
+
+🎨 Hobbies
+Music: Listening and Singing | Literature: Learning about Spirituality and Human Nature
+Cinematic and Comic Book Critique: Passionate about fiction movies and tracing their comic origins
+Exploring the origins of truth in science and education , 
+
+personal infos
+first name : Jashanpreet
+middle name : Singh
+last name : Sawhney
+Age : 22 Years
+Nationality : Indian
+Address : 1730 , near Police Chownky , Rajaan Gali ,Jagadhri ,Haryana ,135001
+phone : +919996249013
+Email : jashannoor13@gmail.com
+ spoken langages : Punjabi , Hindi , English , 
+on the about page  , 
+
+also display all the skills using their logos on the home page after welcoming the visiter and telling him that I am C++ Developer Enthusiast and Passionate about ML/AI  , and under that my education section 

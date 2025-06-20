@@ -1,3 +1,5 @@
+import { PERSONAL_INFO } from "@/lib/constants";
+
 export default function Footer() {
   const socialLinks = [
     { href: "https://github.com/jashanpreet1302", icon: "fab fa-github", hoverColor: "hover:text-violet-400" },
@@ -10,10 +12,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center">
           <div className="text-2xl font-bold gradient-text mb-4">
-            Jashanpreet Singh
+            {PERSONAL_INFO.fullName}
           </div>
           <p className="text-slate-400 mb-6">
-            Building the future, one line of code at a time.
+            {PERSONAL_INFO.specialization} | {PERSONAL_INFO.passion}
           </p>
           <div className="flex justify-center space-x-6">
             {socialLinks.map((link, index) => (
@@ -29,7 +31,7 @@ export default function Footer() {
             ))}
           </div>
           <div className="mt-8 pt-8 border-t border-slate-800 text-slate-500 text-sm">
-            <p>&copy; 2024 Jashanpreet Singh. All rights reserved.</p>
+            <p>&copy; 2024 {PERSONAL_INFO.fullName}. All rights reserved.</p>
           </div>
         </div>
       </div>
