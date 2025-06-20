@@ -15,9 +15,13 @@ export default function HeroSection() {
       
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6 py-8">
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          initial={{ opacity: 0, scale: 0.8, rotateX: -15 }}
+          animate={{ opacity: 1, scale: 1, rotateX: 0 }}
+          transition={{ 
+            duration: 0.8, 
+            ease: [0.25, 0.46, 0.45, 0.94],
+            staggerChildren: 0.2
+          }}
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="gradient-text">
@@ -74,25 +78,44 @@ export default function HeroSection() {
 
           {/* Skills Section */}
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             className="mt-12"
           >
-            <h3 className="text-2xl font-bold text-violet-400 mb-8 text-center">Technical Skills</h3>
+            <motion.h3 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="text-2xl font-bold text-violet-400 mb-8 text-center"
+            >
+              Technical Skills
+            </motion.h3>
             <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
               {SKILLS.map((skill, index) => (
                 <motion.div
                   key={skill.name}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                  className="glass-card p-4 flex flex-col items-center hover:scale-110 transition-transform duration-300"
+                  initial={{ opacity: 0, rotateY: -90, scale: 0.5 }}
+                  animate={{ opacity: 1, rotateY: 0, scale: 1 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: 0.8 + index * 0.1,
+                    type: "spring",
+                    stiffness: 100
+                  }}
+                  whileHover={{ 
+                    scale: 1.15, 
+                    rotateY: 5,
+                    transition: { duration: 0.2 }
+                  }}
+                  className="glass-card p-4 flex flex-col items-center cursor-pointer"
                 >
-                  <img
+                  <motion.img
                     src={skill.logo}
                     alt={skill.name}
                     className="w-12 h-12 mb-3"
+                    whileHover={{ rotate: 360 }}
+                    transition={{ duration: 0.5 }}
                   />
                   <span className="text-sm font-medium text-slate-300">{skill.name}</span>
                   <span className="text-xs text-slate-500">{skill.category}</span>

@@ -46,10 +46,22 @@ export default function PortfolioSection() {
             {PROJECTS.map((project, index) => (
               <motion.div
                 key={project.id}
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="flex-none w-80 glass-card overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+                initial={{ opacity: 0, rotateY: 45, scale: 0.8 }}
+                whileInView={{ opacity: 1, rotateY: 0, scale: 1 }}
+                transition={{ 
+                  duration: 0.7, 
+                  delay: index * 0.15,
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 15
+                }}
+                whileHover={{ 
+                  scale: 1.05,
+                  rotateY: -5,
+                  z: 50,
+                  transition: { duration: 0.3 }
+                }}
+                className="flex-none w-80 glass-card overflow-hidden cursor-pointer"
               >
                 <img
                   src={project.image}

@@ -119,22 +119,7 @@ export default function ContactSection() {
                 ))}
               </div>
               
-              <div className="mt-8 pt-8 border-t border-slate-700">
-                <h4 className="text-lg font-semibold text-violet-400 mb-4">Follow Me</h4>
-                <div className="flex space-x-4">
-                  {socialLinks.map((link, index) => (
-                    <a
-                      key={index}
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`w-10 h-10 bg-slate-700/50 ${link.hoverColor} rounded-full flex items-center justify-center transition-colors`}
-                    >
-                      <i className={`${link.icon} text-white`}></i>
-                    </a>
-                  ))}
-                </div>
-              </div>
+
             </div>
           </motion.div>
           
