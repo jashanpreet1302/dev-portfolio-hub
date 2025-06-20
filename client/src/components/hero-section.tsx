@@ -25,8 +25,7 @@ export default function HeroSection() {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
-            {PERSONAL_INFO.passion}. Crafting exceptional digital experiences with cutting-edge technologies 
-            and creating innovative solutions that make a difference.
+            {PERSONAL_INFO.passion} and learning about new aspects of the fields in which I can use them to able to create sustainable solutions to any problem. Also well versed in DSA and their different approaches.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
