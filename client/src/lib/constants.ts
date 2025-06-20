@@ -120,7 +120,9 @@ export const PROJECTS = [
     description: "Real-time weather forecasting tool that fetches and displays weather data using an API. Integrated cURL for API requests and parsed JSON data to provide weather updates in CLI.",
     image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     technologies: ["C++", "cURL", "JSON"],
-    colors: ["violet", "cyan", "emerald"]
+    colors: ["violet", "cyan", "emerald"],
+    githubUrl: "https://github.com/jashanpreet1302",
+    liveUrl: null
   },
   {
     id: 2,
@@ -128,7 +130,9 @@ export const PROJECTS = [
     description: "Secure password manager with encryption for storing and managing credentials. Used MongoDB for database and Express.js for backend API development.",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     technologies: ["React", "Tailwind CSS", "MongoDB", "Express.js"],
-    colors: ["violet", "cyan", "emerald"]
+    colors: ["violet", "cyan", "emerald"],
+    githubUrl: "https://github.com/jashanpreet1302",
+    liveUrl: null
   },
   {
     id: 3,
@@ -136,7 +140,9 @@ export const PROJECTS = [
     description: "Responsive music streaming web app that shows Spotify's UI and functionality. Implemented audio playback, playlist management, and interactivity.",
     image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     technologies: ["HTML", "CSS", "JavaScript"],
-    colors: ["violet", "cyan", "emerald"]
+    colors: ["violet", "cyan", "emerald"],
+    githubUrl: "https://github.com/jashanpreet1302",
+    liveUrl: null
   },
   {
     id: 4,
@@ -144,7 +150,9 @@ export const PROJECTS = [
     description: "Productivity-oriented web app to store code snippets, analyze project performance using visual charts, and assist in debugging with intelligent insights.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     technologies: ["React", "TypeScript", "MongoDB", "Chart.js"],
-    colors: ["violet", "cyan", "emerald"]
+    colors: ["violet", "cyan", "emerald"],
+    githubUrl: "https://github.com/jashanpreet1302",
+    liveUrl: null
   },
   {
     id: 5,
@@ -152,7 +160,9 @@ export const PROJECTS = [
     description: "Fully responsive clone of the Netflix web app, pixel-perfect on both desktop and mobile, matching the layout, grid, and UI behavior of the original platform.",
     image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     technologies: ["HTML", "CSS", "JavaScript"],
-    colors: ["violet", "cyan", "emerald"]
+    colors: ["violet", "cyan", "emerald"],
+    githubUrl: "https://github.com/jashanpreet1302",
+    liveUrl: null
   },
   {
     id: 6,
@@ -160,41 +170,10 @@ export const PROJECTS = [
     description: "Academic analytics web app that stores student performance data and generates intelligent reports including personalized focus areas with custom report generation.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
-    colors: ["violet", "cyan", "emerald"]
+    colors: ["violet", "cyan", "emerald"],
+    githubUrl: "https://github.com/jashanpreet1302",
+    liveUrl: null
   }
 ];
 
-export const EVENTS = [
-  {
-    id: 1,
-    title: "Tech Conference Speaker",
-    description: "Presented on \"Modern Web Development Practices\" at TechCon 2024",
-    date: "March 2024",
-    color: "bg-violet-500",
-    side: "left"
-  },
-  {
-    id: 2,
-    title: "Open Source Contribution",
-    description: "Major contributor to popular React component library with 10k+ stars",
-    date: "January 2024",
-    color: "bg-cyan-500",
-    side: "right"
-  },
-  {
-    id: 3,
-    title: "Hackathon Winner",
-    description: "First place in National Coding Challenge for innovative AI solution",
-    date: "November 2023",
-    color: "bg-emerald-500",
-    side: "left"
-  },
-  {
-    id: 4,
-    title: "Certification Achievement",
-    description: "AWS Solutions Architect Professional certification obtained",
-    date: "September 2023",
-    color: "bg-amber-500",
-    side: "right"
-  }
-];
+export const EVENTS = [];

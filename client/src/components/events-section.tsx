@@ -1,40 +1,7 @@
 import { motion } from "framer-motion";
+import { EVENTS } from "@/lib/constants";
 
 export default function EventsSection() {
-  const events = [
-    {
-      id: 1,
-      title: "Tech Conference Speaker",
-      description: "Presented on \"Modern Web Development Practices\" at TechCon 2024",
-      date: "March 2024",
-      color: "bg-violet-500",
-      side: "left"
-    },
-    {
-      id: 2,
-      title: "Open Source Contribution",
-      description: "Major contributor to popular React component library with 10k+ stars",
-      date: "January 2024",
-      color: "bg-cyan-500",
-      side: "right"
-    },
-    {
-      id: 3,
-      title: "Hackathon Winner",
-      description: "First place in National Coding Challenge for innovative AI solution",
-      date: "November 2023",
-      color: "bg-emerald-500",
-      side: "left"
-    },
-    {
-      id: 4,
-      title: "Certification Achievement",
-      description: "AWS Solutions Architect Professional certification obtained",
-      date: "September 2023",
-      color: "bg-amber-500",
-      side: "right"
-    }
-  ];
 
   return (
     <section id="events" className="py-20">
@@ -58,48 +25,27 @@ export default function EventsSection() {
           </motion.p>
         </div>
         
-        <div className="space-y-8">
-          {/* Timeline */}
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-violet-500 to-cyan-500 rounded-full"></div>
-            
-            {events.map((event, index) => (
-              <motion.div
-                key={event.id}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="relative flex items-center justify-between mb-12"
-              >
-                {event.side === "left" ? (
-                  <>
-                    <div className="w-5/12 text-right pr-8">
-                      <div className="glass-card p-6">
-                        <h3 className="text-xl font-bold text-violet-400 mb-2">{event.title}</h3>
-                        <p className="text-slate-300 text-sm mb-3">{event.description}</p>
-                        <span className="text-cyan-400 text-sm font-medium">{event.date}</span>
-                      </div>
-                    </div>
-                    <div className={`w-4 h-4 ${event.color} rounded-full border-4 border-slate-900 z-10`}></div>
-                    <div className="w-5/12"></div>
-                  </>
-                ) : (
-                  <>
-                    <div className="w-5/12"></div>
-                    <div className={`w-4 h-4 ${event.color} rounded-full border-4 border-slate-900 z-10`}></div>
-                    <div className="w-5/12 text-left pl-8">
-                      <div className="glass-card p-6">
-                        <h3 className="text-xl font-bold text-violet-400 mb-2">{event.title}</h3>
-                        <p className="text-slate-300 text-sm mb-3">{event.description}</p>
-                        <span className="text-cyan-400 text-sm font-medium">{event.date}</span>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </motion.div>
-            ))}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center"
+        >
+          <div className="glass-card p-12 max-w-2xl mx-auto">
+            <div className="mb-6">
+              <div className="w-16 h-16 bg-violet-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+            <h3 className="text-2xl font-bold text-violet-400 mb-4">Events Coming Soon</h3>
+            <p className="text-slate-300 text-lg">
+              This section will be updated with upcoming events, achievements, and milestones. 
+              Stay tuned for exciting announcements!
+            </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -69,10 +69,29 @@ export default function PortfolioSection() {
                       </span>
                     ))}
                   </div>
-                  <button className="text-violet-400 hover:text-violet-300 transition-colors text-sm flex items-center">
-                    View Project
-                    <ExternalLink className="ml-1 w-3 h-3" />
-                  </button>
+                  <div className="flex gap-3">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-violet-400 hover:text-violet-300 transition-colors text-sm flex items-center"
+                    >
+                      <i className="fab fa-github mr-1"></i>
+                      GitHub
+                      <ExternalLink className="ml-1 w-3 h-3" />
+                    </a>
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm flex items-center"
+                      >
+                        Live Demo
+                        <ExternalLink className="ml-1 w-3 h-3" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </motion.div>
             ))}
