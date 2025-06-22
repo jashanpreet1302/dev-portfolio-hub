@@ -1,6 +1,23 @@
-node_modules
-dist
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+client/dist/
+server/public/
+
+# System files
 .DS_Store
-server/public
-vite.config.ts.*
+
+# Vite
+vite.config.ts
+
+# Env files
+.env
+
+# Archives
 *.tar.gz
+
+# Deployment folders
+.vercel/
+.replit/
