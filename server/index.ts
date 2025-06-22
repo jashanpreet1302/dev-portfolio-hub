@@ -3,6 +3,11 @@ import { registerRoutes } from "./routes";
 import { setupVite, log } from "./vite";
 import path from "path";
 import fs from "fs";
+import { fileURLToPath } from "url"; // ✅ NEW for ESM __dirname fix
+
+// ✅ Fix __dirname for ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(express.json());
